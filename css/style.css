@@ -1,18 +1,31 @@
+:root {
+	--font-family: Arial, Helvetica, sans-serif;
+	--color-orange-bg: #ffa177;
+	--color-orange-border: #ff8155;
+	--color-green-bg: #bafcba;
+	--color-green-border: #85fd85;
+	--color-light-blue: #4a6bff;
+	--color-dark-blue: rgb(4, 0, 63);
+	--color-yellow-bg: #fdff7b;
+	--color-bg-layout: #0000009e;
+	--standart-border: 1px solid;
+	--button-padding: 10px 20px 10px 20px;
+}
 html,
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-family);
 	height: 100%;
 	width: 100%;
 	min-width: 600px;
 	min-height: 600px;
 	margin: 0%;
 	padding: 0%;
-	background-color: #ffffff;
+	background-color: white;
 }
 header {
 	height: 15%;
 	width: 100%;
-	background-color: #4a6bff;
+	background-color: var(--color-light-blue);
 	align-items: center;
 }
 .upper-quote {
@@ -30,7 +43,7 @@ header {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	outline: 1px solid rgb(4, 0, 63);
+	outline: var(--standart-border) var(--color-dark-blue);
 }
 nav {
 	width: 16%;
@@ -39,8 +52,8 @@ nav {
 	overflow: auto;
 	font-weight: bold;
 	text-align: center;
-	background-color: #ffa177;
-	border: 1px solid #ff8155;
+	background-color: var(--color-orange-bg);
+	border: var(--standart-border) var(--color-orange-border);
 }
 nav a {
 	margin-right: 20px;
@@ -55,8 +68,8 @@ main {
 	margin-right: 2%;
 	padding: 5px;
 	overflow: auto;
-	background-color: #bafcba;
-	border: 1px solid #85fd85;
+	background-color: var(--color-green-bg);
+	border: var(--standart-border) var(--color-green-border);
 }
 .side {
 	width: 50%;
@@ -68,8 +81,8 @@ main {
 	margin-bottom: 2px;
 	padding: 2%;
 	overflow: auto;
-	background-color: #ffa177;
-	outline: 1px solid #ff8155;
+	background-color: var(--color-orange-bg);
+	outline: var(--standart-border) var(--color-orange-border);
 	text-align: center;
 	vertical-align: middle;
 }
@@ -83,20 +96,20 @@ article {
 	width: 48%;
 	margin-right: 4%;
 	overflow: auto;
-	background-color: #fdff7b;
-	outline: 1px solid yellow;
+	background-color: var(--color-yellow-bg);
+	outline: var(--standart-border) yellow;
 }
 aside {
 	height: 100%;
 	width: 48%;
 	overflow: auto;
-	background-color: #bafcba;
-	outline: 1px solid #85fd85;
+	background-color: var(--color-green-bg);
+	outline: var(--standart-border) var(--color-green-border);
 }
 footer {
 	height: 15%;
 	width: 100%;
-	background-color: #4a6bff;
+	background-color: var(--color-light-blue);
 	display: flex;
 	flex-direction: row;
 }
@@ -128,7 +141,7 @@ footer {
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	background-color: #0000009e;
+	background-color: var(--color-bg-layout);
 	z-index: 10;
 	display: none;
 	justify-content: center;
@@ -141,17 +154,17 @@ footer {
 	text-align: center;
 }
 button {
-	border: 1px solid gray;
+	border: var(--standart-border) gray;
 	background-color: white;
 	border-radius: 5px;
-	padding: 10px 20px 10px 20px;
+	padding: var(--button-padding);
 	cursor: pointer;
 }
 button.popup-button {
 	position: relative;
 	left: 75%;
 	bottom: 5%;
-	border: 1px solid black;
+	border: var(--standart-border) black;
 }
 .imgmap {
 	position: relative;

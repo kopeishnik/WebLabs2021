@@ -4,9 +4,11 @@
 	"description": "лаба 1 по вебу",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint",
+		"lint": "eslint **/*.js --ignore-path .gitignore",
+		"fix": "eslint --fix **/*.js --ignore-path .gitignore",
+		"fmt": "prettier --write . --ignore-path .gitignore",
 		"prepare": "husky install",
-		"lint": "prettier --check .",
+		"test": "prettier --check .",
 		"format:fix": "prettier --write ."
 	},
 	"keywords": [
@@ -21,5 +23,8 @@
 		"prettier": "2.4.1",
 		"stylelint": "^13.13.1",
 		"stylelint-config-standard": "^22.0.0"
+	},
+	"dependencies": {
+		"eslint-plugin-sonarjs": "^0.11.0"
 	}
 }
