@@ -1,0 +1,30 @@
+{
+	"name": "lab1",
+	"version": "1.0.0",
+	"description": "лаба 1 по вебу",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint **/*.js --ignore-path .gitignore",
+		"fix": "eslint --fix **/*.js --ignore-path .gitignore",
+		"fmt": "prettier --write . --ignore-path .gitignore",
+		"prepare": "husky install",
+		"test": "prettier --check .",
+		"format:fix": "prettier --write ."
+	},
+	"keywords": [
+		"lab",
+		"lab1"
+	],
+	"author": "Olexandr Zelenskyi",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^7.32.0",
+		"husky": "^7.0.2",
+		"prettier": "2.4.1",
+		"stylelint": "^13.13.1",
+		"stylelint-config-standard": "^22.0.0"
+	},
+	"dependencies": {
+		"eslint-plugin-sonarjs": "^0.11.0"
+	}
+}

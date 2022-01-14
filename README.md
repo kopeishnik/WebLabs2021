@@ -1,5 +1,4 @@
 <h1>Web Labs 2021</h1>
-<h2>There will be my labs</h2>
-<h2>Probably on other branches</h2>
-<br>
-<h2>Zelenskyi Olexandr, IP-01<h2>
+<h3>Lab1</h3>
+Zelenskyi Olexandr, IP-01
+https://vercel.com/zelenskyi/web-labs2021-lab1 - задеплоенный на версель проект.
